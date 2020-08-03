@@ -1,0 +1,345 @@
+// Video section
+.video-container {
+    width: 100%;
+    height: 100%;
+
+    video {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// Buttons section
+.our-materials-grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 24px; // 18px
+    padding-bottom: 24px;
+    border-bottom: 1px solid #d3d4d5;
+    margin-bottom: 18px;
+
+    .our-materials__grid-item {
+        text-align: center;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 2px;
+        padding: 12px;
+        margin: 6px;
+        font-weight: 600;
+        border: 2px solid #212a2f;
+        border-radius: 2px;
+        background-color: #fff;
+        transition: color .25s ease-out, background-color .25s ease-out, border-color .25s ease-out;
+        cursor: pointer;
+
+        a {
+            color: #212a2f;
+            text-decoration: none;
+        }
+      }
+
+      .our-materials__grid-item:hover {
+        background-color: #212a2f;
+        color: #fff;
+
+        a {
+            color: #fff;
+        }
+      }
+
+      .active {
+        background-color: #212a2f;
+        
+        a {
+            color: #fff;
+        }
+    }
+}
+
+// Mother Nature section
+.mother-nature-flex-container {
+    display: flex;
+    flex-direction: column;
+
+    .mother-nature-img, .mother-nature-text {
+        margin: 0 auto;
+        // text-align: center;
+    }
+
+    .mother-nature-text {
+        text-align: center;
+
+        h2 {
+            margin-bottom: 18px;
+        }
+
+        p {
+            text-transform: none;
+        }
+    }
+}
+
+// Flock section
+.flock-flex-1, .flock-flex-2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .flock-flex-1__text, .flock-flex-2__text {
+        position: absolute;
+        text-align: center;
+
+        p {
+            text-transform: none;
+        }
+    }
+}
+
+.flock-flex-1-wool {
+    background: url('../assets/img/wool-carpet.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.flock-flex-1-tree {
+    background: url('../assets/img/tree.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.flock-flex-1-sugar {
+    background: url('../assets/img/sugar.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.flock-flex-1-trino {
+    background: url('../assets/img/knit.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.flock-flex-1 {
+    .flock-flex-1__text {
+        color: #fff;
+        top: 28%;
+        left: 10%;
+        right: 10%;
+        
+        h2 {
+            color: #fff;
+            margin-bottom: 24px;
+        }
+    }
+}
+
+.flock-flex-2 {
+    .flock-flex-2-a {
+        background-color: #eeebe5;
+        height: 400px;
+
+        .flock-flex-2-a__img {
+            width: 60px;
+            margin: 0 auto;
+            padding-top: 54px;
+        }
+        
+        .flock-flex-2__text {
+            // background-color: red;
+            margin: 0 auto !important;
+            padding-left: 40px;
+            padding-right: 40px;
+
+            h2 {
+                margin-bottom: 18px;
+            }
+        }
+
+        .flock-flex-2__additional-padding {
+            padding-top: 98px;
+        }
+    }
+
+    .flock-flex-2-b {
+        background-color: #f8f7f5;
+        height: 280px;
+
+        .flock-flex-2-b__img {
+            width: 100%;
+            // background-color: red;
+            margin: 0 auto !important;
+        }
+    }
+}
+
+// More Materials section
+.h2 {
+    text-align: center;
+    padding-top: 54px;
+}
+
+.materials-flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding-bottom: 54px;
+
+    .flex-item {
+        text-align: center;
+        // flex-shrink: 3;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        margin-bottom: 18px;
+    }
+
+    p {
+        text-transform: none;
+    }
+}
+
+
+@media screen and (min-width: 415px) {
+    .flock-flex-2-b {
+        height: 400px !important;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .our-materials-grid-container {
+        grid-template-columns: auto auto auto auto;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .mother-nature-flex-container {
+        display: flex;
+        flex-direction: row;
+
+        .mother-nature-img, .mother-nature-text {
+            width: 50%;
+            padding: 48px 0;
+        }
+
+        .mother-nature-text {
+            text-align: left;
+
+            h2 {
+                margin-bottom: 18px;
+            }
+        }
+    }
+
+    .flock-flex-1, .flock-flex-2 {
+        flex-direction: row;
+    }
+
+    .flock-flex-1 {
+        .flock-flex-1__text {
+            color: #fff;
+            
+            h2 {
+                color: #fff;
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    .flock-flex-2 {
+        .flock-flex-2-a {
+            background-color: #eeebe5;
+            height: 400px;
+
+            width: 50%;
+            
+            .flock-flex-2__text {
+                width: 50%;
+                // background: red;
+                padding-left: 40px;
+                padding-right: 40px;
+
+                h2 {
+                    margin-bottom: 18px;
+                }
+            }
+        }
+
+        .flock-flex-2-b {
+            background-color: #f8f7f5;
+            height: 400px;
+
+            width: 50%;
+
+            .flock-flex-2-b__img {
+                margin: 48px auto;
+            }
+        }
+    }
+
+    .materials-flex-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        h3 {
+            .br {
+                    display: block;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .mother-nature-flex-container {
+        .mother-nature-text-wool {
+            padding-top: 98px;
+        }
+
+        .mother-nature-text-tree {
+            padding-top: 108px;
+        }
+
+        .mother-nature-text-sugar {
+            padding-top: 98px;
+        }
+        
+        .mother-nature-text-trino {
+            padding-top: 88px;
+        }
+    }
+    
+    .flock-flex-2-a__img {
+        margin-top: 48px !important;
+    }
+
+    .flock-flex-2-b__img {
+        // background-color: red;
+        margin: 0px auto !important;
+    }
+
+    .flock-flex-2__text {
+        h2 {
+            margin-bottom: 18px;
+        }
+    }
+
+    .flock-flex-2__additional-padding {
+        padding-top: 118px !important;
+    }
+
+    .materials-flex-container {
+        h3 {
+            .br {
+                    display: inline-block;
+            }
+        }
+    }
+}

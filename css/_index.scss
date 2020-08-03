@@ -1,0 +1,545 @@
+// Hero section
+.hero {
+    // height: calc(100vh - 60px); // 60px is header height
+
+    .hero__image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('/assets/img/hero2.jpg'); // hero2
+        // width: 100vw;
+        height: 100vh; // 100% // height: calc(85vh - 60px);
+        min-height: 500px;
+        // background-position: 73%;
+        background-position: center left; // for hero2
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    
+        .hero__text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            width: 100%;
+            max-width: 1200px;
+
+            h1 {               
+                text-transform: uppercase;
+                color: #fff;
+                text-align: center;
+                transform: skewY(-5deg);
+                width: 100%;
+            }
+        }
+
+        .shop-links {
+            padding-bottom: 48px;
+        }
+    }
+}
+
+// Tread Ligther section
+.flex-thread-lighter {
+    display: flex;
+    flex-direction: column; // desktop: row
+    padding: 24px 0 24px 0;
+
+    .thread-lighter-img {
+        width: 100%; // desktop: 50%
+        margin-bottom: 18px;
+    }
+
+    .thread-lighter-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+       h2 {
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 1.32;
+        color: #212a2f;
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+        
+        margin-bottom: 18px;
+       }
+
+       p {
+            text-align: center;       
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            letter-spacing: .5px;
+            color: #212a2f;
+
+            margin-bottom: 18px;
+       }
+    }
+}
+
+// Socks & Underwear section
+.flex-images {
+    display: flex;
+    flex-direction: column;
+
+    .shop-links {        
+        padding-bottom: 0;
+        bottom: -75px;
+        // background-color: red;
+    }
+
+    .flex-images__container {
+        position: relative;
+        background-color: black;
+
+        .flex-images__text {
+            position: absolute;
+            top: 32.5%;
+            left: 0%;
+            width: 100%;
+            height: 35%; // 32.5x2 = 65%; 65% + 35% = 100%
+            text-align: center;
+
+            h2 {    
+                color: #fff;
+                margin-bottom: 18px;
+            }
+
+            h3 {
+                color: #fff;
+            }
+        }
+    }
+
+    .img-1, .img-4 {
+        width: 100%; 
+        height: 300px;
+        margin-bottom: -4px; // there is some gap between images in default
+        opacity: 0.7;
+    }
+
+    .img-2, .img-3, .img-5, .img-6 {
+        display: none;
+    }
+}
+
+// Wear in the Wild / A Fitting Gift section
+.flex-wild-gift {
+    display: flex;
+    flex-direction: column; // desktop: row
+    width: 100%;
+    // padding: 24px 0 24px 0;
+
+    margin-top: 48px;
+
+    // background-color: red;
+
+    .wild-gift__container {
+        padding: 0 36px 36px;
+        text-align: center;
+
+        h2 {
+            margin-top: 18px;
+        }
+
+        p {
+            margin-top: 18px;
+        }
+    }
+
+    .wild-gift__wild, .wild-gift__gift {
+        width: 100%; // desktop: 50%
+        margin: 0 auto;
+    }
+
+    .wild-gift__wild {
+        background-color: #f8f7f5;
+    }
+    
+    .wild-gift__gift {
+        background-color: black;
+
+        h2, p {
+            color: #fff;
+        }
+    }
+
+    .wild-gift__text {
+        text-align: center;
+    }
+}
+
+// Quotes section
+.quotes {
+    position: relative;
+    text-align: center;
+    padding: 36px 0; // desktop: padding: 72px;
+    // margin-bottom: 48px;
+
+    h3 {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.5;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #212a2f;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 12px;
+    }
+
+    .chevron-left, .chevron-right {
+        font-size: 18px;
+        position: absolute;
+        top: 40px;
+        cursor: pointer;
+    }
+    .chevron-left:hover, .chevron-right:hover {
+        color: #212a2f;
+    }
+
+    .chevron-left {
+        left: 40px;
+    }
+    .chevron-right {
+        right: 40px;
+    }
+
+    .blockquote {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 36px;
+        position: relative;
+        // margin: 0 auto;
+        // width: 60%;
+        // background-color: red;
+
+        a {
+            text-decoration: none;
+        }
+
+        .blockquote__text {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.61;
+            letter-spacing: .5px;
+            text-decoration: none;
+            color: #212a2f;
+            margin: 0 auto;
+            padding: 0;
+            text-align: center;
+            margin-bottom: 36px;
+        }
+
+        .blockquote__img {
+            width: 30%;
+            height: auto;
+            // margin: 0 auto;
+            cursor: pointer;
+        }
+    }
+
+    .blockquote-images-mobile-only {
+        display: block;
+    }
+
+    .blockquote-images-desktop-only {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 767px) {   
+    .hero {
+        .hero__image {
+            .hero__text {
+                h1 {
+                    font-size: 72px;
+                    letter-spacing: 6px;
+                }
+            }
+        }
+    }
+
+    .flex-thread-lighter {
+        display: flex;
+        flex-direction: row;
+        
+        margin-top: 48px;
+
+        .thread-lighter-img, .thread-lighter-text {
+            width: 50%;
+        }
+
+        .thread-lighter-img {
+            padding: 0 48px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            margin-top: 18px;
+        }
+
+        .thread-lighter-text {
+            h2 {
+                font-size: 32px;
+                line-height: 1.31;
+            }
+        }
+    }
+
+    .flex-images {
+        display: flex;
+        flex-direction: row;
+
+        margin-top: 48px;
+
+        .flex-images__running-shoes, .flex-images__everyday-shoes {
+            width: 50%;
+        }
+
+        .flex-images__underwear {
+            width: 100%;
+        }
+
+        .img-1, .img-4 {
+            height: 300px;
+        }
+
+        .img-2, .img-3, .img-5, .img-6 {
+            width: 50%;
+            height: 150px;
+            display: block;
+        }
+    }
+
+    .flex-wild-gift {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        // padding: 24px 0 24px 0;
+        margin-top: 48px;
+        // background-color: red;
+    
+        .wild-gift__container {
+            padding: 0 36px 36px;
+            text-align: center;
+
+            .wild-gift-img-1-max-width {
+                max-width: 286px;
+                margin: 0 auto;
+                // background-color: blue;
+            }
+    
+            h2 {
+                margin-top: 18px;
+            }
+    
+            p {
+                margin-top: 18px;
+            }
+        }
+    
+        .wild-gift__wild, .wild-gift__gift {
+            width: 50%;
+            margin: 0 auto;
+        }
+    
+        .wild-gift__wild {
+            background-color: #f8f7f5;
+        }
+        
+        .wild-gift__gift {
+            background-color: black;
+    
+            h2, p {
+                color: #fff;
+            }
+        }
+    
+        .wild-gift__text {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header {
+        .header-men-women {
+            position: fixed;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            display: flex !important;
+
+            .header-men-women-container {
+                padding-top: 48px;
+                padding-bottom: 48px;
+                display: flex; 
+                justify-content: flex-start; 
+                margin: 0 auto; 
+                max-width: 1200px;
+            }
+
+            .hidden {
+                display: none;
+            }
+
+            h4 {
+                margin-bottom: 18px;
+            }
+
+            p {
+                font-weight: 400;
+                line-height: 1.43;
+                font-size: 14px;
+                letter-spacing: 0.4px;
+                color: rgb(33, 42, 47);
+                margin: 0px;
+                padding: 0px;
+            }
+
+            ul {
+                width: 20%;
+
+                li {
+                    padding: 6px 0px;
+                }
+            }
+        }
+    }
+
+    .hero {
+        .hero__image {
+            background-position: 50%; // = center
+
+            .hero__text {
+                h1 {
+                    font-size: 72px;
+                    letter-spacing: 10px;
+                }
+            }
+        }
+
+        .shop-links__width {
+            width: 20% !important;
+        }
+    }
+
+    .flex-thread-lighter {
+        margin-top: 0; // min-width 767px: 48px
+    }
+
+    .flex-images {
+        display: flex;
+        flex-direction: row;
+
+        margin-top: 0; // min-width 767px: 48px
+
+        .shop-links {        
+            padding-bottom: 0;
+            bottom: -165px;
+        }
+
+        .flex-images__underwear {
+            margin-top: 48px;
+
+            .shop-links__width {
+                width: 28% !important;
+            }
+        }
+
+        .flex-images__container {
+            position: relative;
+            background-color: black;
+    
+            .flex-images__text {
+                position: absolute;
+                top: 40%;
+                left: 0%;
+                width: 100%;
+                height: 20%; // 32.5x2 = 65%; 65% + 35% = 100%
+                text-align: center;
+            }
+        }
+
+        .img-1, .img-4 {
+            height: 500px;
+        }
+
+        .img-2, .img-3, .img-5, .img-6 {
+            width: 50%;
+            height: 250px;
+            display: block;
+        }
+    }
+
+    .quotes {
+        padding: 72px;
+        max-width: 958px;
+        margin: 0 auto;
+
+        h3 {
+            font-size: 16px;
+            line-height: 1.5;
+    
+            margin-bottom: 48px;
+        }
+
+        .chevron-left, .chevron-right {
+            font-size: 18px;
+            position: absolute;
+            top: 0;
+            cursor: pointer;
+        }
+        .chevron-left:hover, .chevron-right:hover {
+            color: #212a2f;
+        }
+        .chevron-left {
+            left: 0%;
+        }
+        .chevron-right {
+            right: 0%;
+        }
+    
+        .blockquote {
+            display: flex;
+            flex-direction: row;
+
+            .blockquote__text {
+                font-size: 22px;
+                line-height: 1.45;
+            }
+
+            .blockquote-images-mobile-only {
+                display: none;
+            }
+
+            .blockquote-images-desktop-only {
+                display: inline-block;
+                margin-left: 25px;
+            }
+
+            img {
+                opacity: 0.5;
+                width: 120px;
+            }
+
+            .img-selected {
+                opacity: 1;
+            }
+
+            img:hover {
+                opacity: 1;
+                cursor: pointer;
+            }
+        }
+    }
+}

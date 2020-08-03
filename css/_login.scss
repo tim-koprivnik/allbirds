@@ -1,0 +1,175 @@
+.login-background {
+    background-color: #f1ebe7;
+}
+
+.login-flex {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+
+    h1 {
+        font-weight: 600;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        font-style: normal;
+    }
+
+    p {
+        margin-top: 19px;
+        margin-bottom: 19px;
+        line-height: 1.375;
+        // margin-bottom: 22px;
+    }
+
+    form {
+        label {
+            font-weight: 600;
+            font-size: 0.75em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .create-account__first-name {
+            margin-top: 22px;
+        }
+
+        input {
+            width: 100%;
+            margin-bottom: 19px;
+            -webkit-appearance: none;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 2px;
+            background-color: white;
+            font-weight: 400;
+            font-size: 1em;
+            padding: 19px 20px;
+        }
+
+        .form-btn {
+            display: block;
+            width: 100%;
+            font-weight: 600;
+            font-size: 0.75em;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            background-color: black;
+            color: white;
+            padding: 23px 0;
+            border: none;
+            -webkit-appearance: none;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            border-radius: 2px;
+            border: 2px solid transparent;
+            -webkit-transition: all 300ms ease;
+            -moz-transition: all 300ms ease;
+            transition: all 300ms ease;
+        }
+        .form-btn:hover {
+            background: transparent;
+            border-color: #000;
+            color: #000;
+        }
+
+        a {
+            font-weight: 600;
+            font-size: 0.75em;
+            text-transform: uppercase;
+            text-decoration: underline;
+            letter-spacing: 1px;
+            text-align: center;
+            margin-top: 16px;
+            color: black;
+        }
+    }
+
+    .login-title {
+        margin-bottom: 40px;
+    }
+
+    .create-account-title {
+        padding-top: 102px;
+    }
+
+    .login-flex__login {
+        display: flex;
+        flex-direction: column;
+
+        padding-top: 180px;
+    }
+
+    .login-flex__create-account {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login-legal {
+        font-size: 11px;
+        margin-top: 15px;
+        // margin-bottom: 30px;
+        text-align: center;
+        
+        a {
+            text-transform: none;
+            font-size: 11px;
+            font-weight: normal;
+        }
+    }
+
+    .required {
+        text-align: center;
+        margin-top: 16px;
+        margin-bottom: 120px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .login-container {
+        width: 450px !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .login-container {
+        width: 90% !important;
+        padding-top: 100px !important;
+
+        .login-flex {
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            .login-flex__login {
+                width: 45%;
+                padding-top: 102px;
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+
+            .login-flex__create-account {
+                width: 45%;
+
+                .required {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .login-container {
+        width: 980px !important;
+        padding-top: 185px !important;
+        padding-bottom: 200px;
+
+        .login-flex {
+            justify-content: space-between;
+        }
+    }
+}
