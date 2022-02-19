@@ -1,2 +1,2 @@
 # allbirds
-Shopify Template
+Website theme for Shopify
