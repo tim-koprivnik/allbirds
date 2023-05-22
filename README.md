@@ -1,2 +1,3 @@
 # allbirds
-Website theme for Shopify
+
+Website theme for Shopify in Liquid and Javascript.
